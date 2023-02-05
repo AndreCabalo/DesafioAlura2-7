@@ -1,20 +1,15 @@
-//var nome= document.querySelector(".nome");                         **aqui usamos quando queremos adicionar um input no html
-//var idade= document.querySelector(".idade")                        **aqui usamos quando queremos adicionar um input no html
-//var linguagemDeEstudo= document.querySelector(".linguagem")        **aqui usamos quando queremos adicionar um input no html
+const nome= prompt("Qual seu nome?");
+const idade = prompt("Qual sua idade?");
+const LinguagemEmEstudo = prompt("Qual linguagem esta estudando atualmente?")
+const msg1 = `Fala ${nome}! fico feliz que aos seus ${idade} anos, você esteja estudando ${LinguagemEmEstudo}`;
+alert(msg1);
+const gostaDeEstudar =prompt(`Você gosta de estudar ${LinguagemEmEstudo}? Responda com o número 1 para SIM ou 2 para NÃO.`);
 
-var nome= prompt("Qual seu nome?");
-var idade= prompt("Quantos anos você tem?");
-var linguagemDeEstudo= prompt("Qual linguagem esta estudando atualmente?");
+if(gostaDeEstudar==1) {
+    alert("Muito bom! Continue estudando e você terá muito sucesso")
 
-nome;
-idade;
-linguagemDeEstudo;
-
-function MandaTexto() {
-   
-    document.write("Olá " + nome + ", vi que vc já tem "+ idade + "e esta atualmente estudando "+linguagemDeEstudo);
-
+} else {
+    alert("Ahh que pena... Já tentou aprender outras linguagens?")
 }
 
-MandaTexto();
 
